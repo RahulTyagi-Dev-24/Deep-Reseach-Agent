@@ -21,10 +21,9 @@ const QnA = () => {
     setReport,
   } = useDeepResearchStore();
 
-  const { append, data, isLoading} = useChat({
+  const { append, data, isLoading } = useChat({
     api: "/api/deep-research",
   });
-
 
   useEffect(() => {
     if (!data) return;
